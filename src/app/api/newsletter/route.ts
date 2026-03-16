@@ -15,7 +15,8 @@ export async function POST(req: Request) {
     //   audienceId: process.env.RESEND_AUDIENCE_ID!,
     // });
 
-    console.log(`Newsletter signup for: ${email}`);
+    // Newsletter signup processed
+
 
     // Simulate success
     return NextResponse.json({ success: true, message: 'Subscribed successfully!' });

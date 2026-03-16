@@ -11,7 +11,6 @@ import { fallbackReviews, type Review } from '@/lib/data/reviews-data';
 export async function GET() {
   try {
     if (!API_KEY) {
-      console.log("No GOOGLE_PLACES_API_KEY found. Serving fallback reviews.");
       return NextResponse.json(fallbackReviews);
     }
 

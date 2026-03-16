@@ -38,7 +38,8 @@ export async function POST(request: NextRequest) {
       });
     } else {
       // Development: just log
-      console.log('[trial-signup] New signup:', { phone });
+      // New trial signup processed
+
     }
 
     return NextResponse.json({ success: true }, { status: 200 });
